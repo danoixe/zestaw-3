@@ -7,7 +7,7 @@ public class Zadanie_3_7 {
 		
 		Scanner r = new Scanner(System.in);
 		
-		int n, i, j, w, k, z=0, m=0, tw, tk, t, s=0;
+		int n, i, j, w, k, z=0, m=0, tw, tk, t, s=0, i2;
 
 		System.out.println("Podaj rozmiar tablicy: ");
 		n = r.nextInt();
@@ -84,17 +84,19 @@ public class Zadanie_3_7 {
 		}
 		
 
-		
-		System.out.println("I iteracja ");
+		for (i2=0; i2<t; i2++) {
+		System.out.println((i2+1) +" iteracja ");
 			for (i=0; i<n; i++) {
 				for (j=0; j<n; j++) {
 						System.out.print(" "+tab[i][j]);	
 				}
 				System.out.println("");
 			}
+		}
 
 			tab0=tab;
 			s++;
+		  
 		  }
 	}
 
